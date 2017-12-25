@@ -71,7 +71,7 @@ final class NormalValueTests: XCTestCase {
         }
 
         let JSON = ["a": "b", "c": "d"]
-        let test = try? Test(map: Mapper(JSON: JSON as NSDictionary))
+        let test = try? Test(map: Mapper(NSDictionary(dictionary: JSON)))
         let parsedJSON = test?.JSON as? [String: String] ?? [:]
         XCTAssertTrue(parsedJSON == JSON)
     }
