@@ -1,4 +1,5 @@
 import Mapper
+@testable import MapperTests
 import XCTest
 
 XCTMain([
